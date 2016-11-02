@@ -1,0 +1,23 @@
+{
+    "name": "generationtux/laravel-marketo-rest-api",
+    "type": "library",
+    "description": "Laravel Marketo Rest Api",
+    "homepage": "https://github.com/generationtux/laravel-marketo-rest-api",
+    "keywords": ["marketo", "generationtux", "api", "rest", "laravel", "lumen"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kyle Nieber"
+        }
+    ],
+    "require": {
+        "generationtux/marketo-rest-api-client": "^0.0.1",
+        "illuminate/support": "~5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "GenTux\\Artisan\\Marketo\\": "src/",
+            "GenTux\\tests\\": "tests/"
+        }
+    }
+}
