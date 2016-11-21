@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "generationtux/marketo-rest-api-client": "^0.0.1",
+        "generationtux/marketo-rest-api-client": "^0",
         "illuminate/support": "~5.1"
     },
     "autoload": {
