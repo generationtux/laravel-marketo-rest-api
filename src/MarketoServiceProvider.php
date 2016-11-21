@@ -14,9 +14,9 @@ class MarketoServiceProvider extends ServiceProvider
     {
         $this->app->singleton('marketo', function() {
            return new Client([
-               config('marketo.auth.api_url'),
-               config('marketo.auth.client_id'),
-               config('marketo.auth.client_secret')
+               'api_url' => config('marketo.auth.api_url'),
+               'client_id' => config('marketo.auth.client_id'),
+               'client_secret' => config('marketo.auth.client_secret')
            ]);
         });
     }
