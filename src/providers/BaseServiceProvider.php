@@ -5,7 +5,7 @@ namespace GenTux\Artisan\Marketo;
 use GenTux\Marketo\Client;
 use Illuminate\Support\ServiceProvider;
 
-class MarketoServiceProvider extends ServiceProvider
+class BaseServiceProvider extends ServiceProvider
 {
     /**
      * Register the service provider
@@ -19,15 +19,5 @@ class MarketoServiceProvider extends ServiceProvider
                'client_secret' => config('marketo.auth.client_secret')
            ]);
         });
-    }
-
-    /**
-     * Create default config
-     */
-    public function boot()
-    {
-        $this->publishes([
-            __DIR__.'/config/marketo.php' => config('marketo.php')
-        ]);
     }
 }

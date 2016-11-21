@@ -12,7 +12,7 @@
 // Service Provider
 'providers' => [
     ...
-    GenTux\Artisan\Marketo\MarketoServiceProvider::class,
+    GenTux\Artisan\Marketo\LaravelServiceProvider::class,
 ];
 
 // Facade
@@ -24,7 +24,7 @@
 // For Lumen
 
 // app.php
-$app->register(GenTux\Artisan\Marketo\MarketoServiceProvider::class);
+$app->register(GenTux\Artisan\Marketo\LumenServiceProvider::class);
 
 ```
  
